@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_height="wrap_content">
+
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView1"
+        android:src="@drawable/image_1"
+        android:scaleType="fitCenter"
+        app:riv_corner_radius="10dip"
+        app:riv_border_width="0dip"
+        app:riv_border_color="#333333"
+        app:riv_mutate_background="true"
+        android:layout_centerVertical="false"
+        app:riv_tile_mode="repeat"
+        app:riv_oval="false"
+        android:layout_height="50dp"
+         android:layout_width="52dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/imageView1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:text="RSPCA"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector__4_"
+                android:layout_toRightOf="@id/title"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:text="Kira is a friendly cat looking for a best friend!"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#E8E8E8"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

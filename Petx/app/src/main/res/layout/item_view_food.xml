@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="35dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="25dp"
+    android:background="@drawable/rectangle_42"
+    android:layout_height="wrap_content">
+
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView1"
+        android:src="@drawable/image_3"
+        android:scaleType="fitCenter"
+        app:riv_corner_radius="10dip"
+        app:riv_border_width="0dip"
+        app:riv_border_color="#333333"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat"
+        app:riv_oval="false"
+        android:layout_height="60dp"
+        android:layout_width="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/imageView1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/rating"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:text="Chew Toy"
+                android:textColor="@color/black"/>
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:progress="44"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:text="For dog"
+            android:textColor="@color/black"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/price"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/cart"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:text="6.4$"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cart"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

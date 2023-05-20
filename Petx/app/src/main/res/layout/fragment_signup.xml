@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragment.SignupFragment">
+
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_close_24"
+            android:layout_alignParentLeft="true"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:textColor="@color/primary"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/primary"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/logIn"/>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/login_text_back"/>
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/login_text_back"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/login_text_back"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:layout_toLeftOf="@+id/showpass"
+            android:hint="•••••••••••••"
+            android:inputType="textPassword"
+            android:background="@color/transparent"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:layout_marginRight="10dp"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/primary"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/showpass"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:id="@+id/checkBox"/>
+
+
+        <TextView
+            android:layout_toRightOf="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I would like to receive the Pet-X newsletter and other promotional information."
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#666666"
+            android:textStyle="normal"
+            android:id="@+id/forget"/>
+
+
+    </RelativeLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/singUp_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:background="@drawable/button_back"/>
+
+
+</LinearLayout>

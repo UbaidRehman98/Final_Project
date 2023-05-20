@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragment.LoginFragment">
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/baseline_close_24"
+        android:layout_alignParentLeft="true"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:textColor="@color/primary"
+        android:textStyle="normal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/primary"
+        android:textStyle="normal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/signUp"/>
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:hint="PetXexample@gmail.com"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/login_text_back"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/login_text_back"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/pass_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:layout_toLeftOf="@+id/showpass"
+            android:hint="•••••••••••••"
+            android:inputType="textPassword"
+            android:background="@color/transparent"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:layout_marginRight="10dp"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/primary"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/showpass"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password?"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="55dp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/primary"
+        android:textStyle="normal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/forget"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="LOG IN"
+        android:textColor="@color/white"
+        android:background="@drawable/button_back"/>
+
+</LinearLayout>

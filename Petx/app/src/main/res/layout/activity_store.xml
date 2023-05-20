@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StoreActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home"
+            android:id="@+id/home"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            android:src="@drawable/hamburger_menu"
+            android:layout_toRightOf="@id/home" />
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store\nManagement"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:textColor="@color/primary"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_text_back"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/title"
+        android:id="@+id/tab"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/sells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/tab_text_back"
+            android:text="Sales"
+            android:textAlignment="center"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/adopt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Adopt"
+            android:padding="5dp"
+            android:background="@drawable/tab_text_back"
+            android:textAlignment="center"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/accessories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Accessories"
+            android:padding="5dp"
+            android:background="@drawable/tab_text_back"
+            android:textAlignment="center"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Request"
+            android:padding="5dp"
+            android:background="@drawable/tab_text_back"
+            android:textAlignment="center"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/tab"
+       android:id="@+id/store_container"/>
+
+
+</RelativeLayout>
